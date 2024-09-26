@@ -12,8 +12,19 @@ export function Navbar({ className }: NavbarProps) {
     return (
         <div className={classNames(cls.Navbar, {}, [className])}>
             <div className={cls.links}>
-                <AppLink to={'/'} theme={AppLinkTheme.INVERTED_SECONDARY} className={cls.mainLink}>{t('Главная')}</AppLink>
-                <AppLink to={'/about'} theme={AppLinkTheme.INVERTED_SECONDARY}>{t('О сайте')}</AppLink>
+                <AppLink
+                    to={'/'}
+                    theme={AppLinkTheme.INVERTED_SECONDARY}
+                    className={cls.mainLink}
+                >
+                    {t('Главная')}
+                </AppLink>
+                <AppLink
+                    to={'/about'}
+                    theme={AppLinkTheme.INVERTED_SECONDARY}
+                >
+                    {t('О сайте')}
+                </AppLink>
             </div>
         </div>
     );

@@ -2,6 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    jest: true
   },
   extends: ["plugin:react/recommended", "airbnb", "plugin:i18next/recommended"],
   parser: "@typescript-eslint/parser",
@@ -45,6 +46,10 @@ module.exports = {
     "@typescript-eslint/strict-boolean-expressions": "off",
     "react/button-has-type": "off",
     "no-underscore-dangle": "off",
-    "import/no-extraneous-dependencies": "off"
+    "import/no-extraneous-dependencies": "off",
+    "max-len": [ 'error', {
+      ignoreComments: true,
+      code: 100
+    }]
   },
 };
