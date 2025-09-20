@@ -3,7 +3,6 @@ import { Button } from 'shared/ui/Button/Button';
 
 describe('classNames', () => {
     test('with only first param', () => {
-        render(<Button></Button>)
+        render(<Button />);
     });
-   
 });

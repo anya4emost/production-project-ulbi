@@ -18,14 +18,14 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
                 presets: ['@babel/preset-env'],
                 plugins: [
                     [
-                        "i18next-extract",
+                        'i18next-extract',
                         {
-                            "nsSeparator": "~",
+                            nsSeparator: '~',
                             locales: ['ru', 'en'],
-                            keyAsDefaultValue: true
-                        }
-                    ]
-                ]
+                            keyAsDefaultValue: true,
+                        },
+                    ],
+                ],
             },
         },
     };

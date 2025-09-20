@@ -1,8 +1,8 @@
 import { classNames } from 'shared/lib/classNames/classNames';
 // import cls from './BugButton.module.scss';
-import { Button } from '../../../../shared/ui/Button/Button';
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Button } from '../../../../shared/ui/Button/Button';
 
 // компонент для тестирования ErrorBoundary
 export function BugButton() {
@@ -15,13 +15,13 @@ export function BugButton() {
         if (error) {
             throw new Error();
         }
-        
     }, [error]);
 
-  return (
-      <Button
-      onClick={onThrow}>
-          { t('Выбросить ошибку')}
-    </Button>
-  )
+    return (
+        <Button
+            onClick={onThrow}
+        >
+            { t('Выбросить ошибку')}
+        </Button>
+    );
 }
